@@ -2,19 +2,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #000000;
+  background-size: cover;
+  height: 100vh;
 }
-
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+}
 .profile-img {
-  background-color: #ffffff;
-  width: 100px;
+  width: 150px;
   margin-top: 31px;
 }
-
+.image {
+  width: 200px;
+  height: 150px;
+}
+.bg-skills-container {
+  display: flex;
+}
 .user-name {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 18px;
-  color: #12022f;
+  font-size: 25px;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 8px;
 }
@@ -25,4 +38,30 @@
   font-size: 14px;
   text-align: center;
   color: #616e7c;
+}
+.card {
+  background-color: #323f4b;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.heading {
+  color: white;
+  margin-top: 5px;
+  align-self: flex-start;
+  color: #cced00;
+  font-size: 20px;
+}
+.main-heading {
+  color: #cced00;
+  font-size: 20px;
+  text-align: center;
+}
+.pera {
+  color: #ffffff;
 }

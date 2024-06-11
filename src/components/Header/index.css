@@ -1,6 +1,23 @@
 .nav-container {
-  background-color: #272727;
-  padding: 10px;
+  padding: 5px;
+}
+.dark-bg {
+  background-color: #5d5252;
+  color: #ffffff;
+}
+
+.light-bg {
+  background-color: #eadddd;
+  color: #000000;
+}
+.theme-change-button {
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 100px;
+  width: 100px;
 }
 
 .header-ul-container {
@@ -23,14 +40,12 @@
 }
 
 .nav-text {
-  color: #ffffff;
   font-weight: bold;
   font-family: 'Roboto';
   font-size: 23px;
 }
 
 .btn-logout {
-  color: #ffffff;
   background-color: #4f46e5;
   border: 0;
   border-radius: 5px;
@@ -46,11 +61,17 @@
 
 .link {
   text-decoration: none;
+  height: 80px;
+  width: 80px;
 }
 
 .home-icon {
-  color: #ffffff;
   font-size: 200%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -73,8 +94,8 @@
   }
 
   .logo {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
   }
 
   .logo-container {
@@ -86,7 +107,6 @@
   }
 
   .home-jobs-btn {
-    color: #ffffff;
     background-color: #4f46e5;
     border: 0;
     border-radius: 5px;

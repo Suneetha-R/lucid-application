@@ -1,3 +1,4 @@
+import {formatDistanceToNow} from 'date-fns'
 import './index.css'
 
 const CommentItem = props => {
@@ -8,7 +9,6 @@ const CommentItem = props => {
   const likeImageUrl = isLiked
     ? 'https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png'
-  const postedTime = date
 
   const onClickLike = () => {
     const {toggleIsLiked} = props
@@ -20,6 +20,7 @@ const CommentItem = props => {
     deleteComment(id)
   }
 
+  const presentDate = formatDistanceToNow(date)
   return (
     <li className="comment-item">
       <div className="comment-container">
@@ -29,7 +30,7 @@ const CommentItem = props => {
         <div>
           <div className="username-time-container">
             <p className="username">{name}</p>
-            <p className="time">{postedTime} ago</p>
+            <p className="time">{presentDate} ago</p>
           </div>
           <p className="comment">{comment}</p>
         </div>
